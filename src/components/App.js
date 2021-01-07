@@ -5,9 +5,7 @@ import Header from './Header';
 function App() {
   return (
   <React.Fragment>
-    <div class = 'jumbotron'>
     <Header/>
-    </div>
   </React.Fragment>
   );
 }

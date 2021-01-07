@@ -1,7 +1,7 @@
 import React from 'react';
 import goodwinImage from './../img/goodwin-logo.jpg';
-import { Form, Button, Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import {FormControl} from 'react-bootstrap';
+import { ButtonGroup, Dropdown, Button, DropdownButton, Navbar, Nav } from 'react-bootstrap';
+
 
 
 
@@ -9,13 +9,15 @@ function Header (){
   return (
     <React.Fragment>
       <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href="#home">Goodwin's Truck and Equipment</Navbar.Brand>
+      {/* <Navbar.Brand href="#home"><img src = {goodwinImage} alt='logo' /></Navbar.Brand> */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
       <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#aboutus">About Us</Nav.Link>
       <Nav.Link href="#directions">Directions</Nav.Link>
+      
       {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -30,8 +32,19 @@ function Header (){
     </Form> */}
   </Navbar.Collapse>
 </Navbar>
-    <h1>Goodwin's Truck and Equipment</h1>
-    <img src = {goodwinImage} alt='logo' />
+
+<ButtonGroup vertical>
+  <Button>Buses</Button>
+  <Button>Dump Trucks</Button>
+  <Button>Garbage Trucks</Button>
+  <Button>Tractors</Button>
+  <Button>Trailers</Button>
+  <Button>Utility Trucks</Button>
+  <Button>Van Trucks</Button>
+  <Button>Yard Equipment</Button>
+  <Button>Parts</Button>
+</ButtonGroup>
+    
     </React.Fragment>
   );
 }
